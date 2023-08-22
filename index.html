@@ -1,0 +1,103 @@
+<!-- Copyright Form8tory -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cake Clicker</title>
+        <link type="text/css" rel="stylesheet" href="css/style.css">
+            <link type="images" rel="shortcut icon" href="images/Cake-Icon.png">
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+</head>
+<body>
+    <audio id="clickSound">
+        <source src="Sounds/Tap.mp3" type="audio/mpeg">
+      </audio>
+      <audio id="backgroundSound" muted>
+        <source src="Sounds/Sweden.mp3" type="audio/mpeg">
+      </audio>
+           
+    <div id="loading-screen">
+        <div class="loader"></div>
+      </div>
+ <div class="game-content" id="game-content">
+    <div class="Text">
+   <h1>Cake Clicker</h1>
+   <h2 id="CakeAmount"></h2>
+   <h3 id="CakePerSec"></h3>
+    <h2 class="Upgrades">Upgrades: <span id="NumberUp"></span></h2>
+    </div>
+    <div class="Cake">
+  <img src="images/Cake.png" class="Cake" id="Cake" style="cursor: pointer;" onclick="CakeClicked(Cpc)" draggable="false">
+  <button class="btn-ascend" onclick="ascend();">
+    Ascend for <span id="AscendCost"></span> <span id="AscendNum" class="UpgradeText">0</span>
+</button>
+<br/>
+    </div>
+   <br/>
+  <button class="btn-item" onclick="buyClicker('Clickers', 'ClickerCost')">
+Buy Clicker for <span id="ClickerCost"></span> <span class="UpgradeText" id="ClickerNum">0</span>
+</button>
+<button class="btn-item" onclick="buyClicker('Ovens', 'OvenCost')">
+Buy Oven for <span id="OvenCost"></span> <span class="UpgradeText" id="OvenNum">0</span>
+</button>
+</button>
+<button class="btn-item" onclick="buyClicker('Banks', 'BankCost')">
+    Buy Bank for <span id="BankCost"></span> <span class="UpgradeText" id="BankNum">0</span>
+</button>
+    </button>
+    <button class="btn-item" onclick="buyClicker('CakeStores', 'CakeStoreCost')">
+        Buy Cake Store for <span id="CakeStoreCost"></span> <span class="UpgradeText" id="CakeStoreNum">0</span>
+    </button>
+        </button>
+        <button class="btn-item" onclick="buyClicker('Factorys', 'FactoryCost')">
+            Buy Factory for <span id="FactoryCost"></span> <span class="UpgradeText" id="FactoryNum">0</span>
+        </button>
+            </button>
+            <button class="btn-item" onclick="buyClicker('Farms', 'FarmCost')">
+                Buy Farm for <span id="FarmCost"></span> <span class="UpgradeText" id="FarmNum">0</span>
+            </button>
+            </button>
+                <button class="btn-item" onclick="buyClicker('Consoles', 'ConsoleCost')">
+                    Buy Console for <span id="ConsoleCost"></span> <span class="UpgradeText" id="ConsoleNum">0</span>
+                </button>
+                    </button>
+                    <button class="btn-item" onclick="buyClicker('Websites', 'WebsiteCost')">
+                        Buy Website for <span id="WebsiteCost"> </span> <span class="UpgradeText" id="WebsiteNum">0</span>
+                    </button>
+                        </button>
+                    <button class="btn-item" onclick="buyClicker('Ads', 'AdCost')">
+                        Buy Ad for <span id="AdCost"> </span> <span class="UpgradeText" id="AdNum">0</span>
+                    </button>
+                        </button>
+                        <button class="btn-item" onclick="buyClicker('Apps', 'AppCost')">
+                            Buy App for <span id="AppCost"> </span> <span class="UpgradeText" id="AppNum">0</span>
+                        </button>
+                            </button>
+                            <button class="btn-item" onclick="buyClicker('Cakegames', 'CakegameCost')">
+                                Buy Cake Clicker Game for <span id="CakegameCost"></span> <span class="UpgradeText" id="CakegameNum">0</span>
+                            </button>
+                            <button class="btn-item" onclick="buyClicker('Hackers', 'HackerCost')">
+                                Buy Hacker for <span id="HackerCost"></span> <span class="UpgradeText" id="HackerNum">0</span>
+                            </button>
+                            <button class="btn-item" onclick="buyClicker('JavaScriptCons', 'JavaScriptConCost')">
+                                Buy JavaScript Console for <span id="JavaScriptConCost"></span> <span class="UpgradeText" id="JavaScriptConNum">0</span>
+                            </button>
+                            <button class="btn-item" onclick="buyClicker('Yous', 'YouCost')">
+                                Buy You for <span id="YouCost"></span> <span class="UpgradeText" id="YouNum">0</span>
+                            </button>
+                            <button class="btn-item" onclick="buyClicker('LuxBaks', 'LuxBakCost')">
+                                Buy Luxury Bakery for <span id="LuxBakCost"></span> <span class="UpgradeText" id="LuxBakNum">0</span>
+                            </button>
+                            <button class="btn-item" onclick="buyClicker('MegaFingers', 'MegaFingersCost')">
+                                Buy Mega Fingers for <span id="MegaFingersCost"></span> <span class="UpgradeText" id="MegaFingersNum">0</span>
+                            </button>
+                            <button class="btn-item" onclick="buyClicker('TheEnds', 'TheEndCost')">
+                                Buy The End? for <span id="TheEndCost"></span> <span class="UpgradeText" id="TheEndNum">0</span>
+                            </button>
+ </div>
+ </div>
+</body>
+<Script src="js/main.js"></Script>
+</html>
+<!-- End of Code -->
